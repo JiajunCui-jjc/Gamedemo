@@ -1,0 +1,75 @@
+/* =============================================
+   London Flat Pixel Game — UI Styles
+   Peaceful pixel-art aesthetic
+   ============================================= */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1a2a1a;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      rgba(0,0,0,0.15) 0px,
+      rgba(0,0,0,0.15) 1px,
+      transparent 1px,
+      transparent 4px
+    );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Courier New', 'MS Gothic', monospace;
+  overflow: hidden;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  filter: drop-shadow(0 0 24px rgba(80,160,80,0.35));
+}
+
+#title-bar {
+  background: #253525;
+  color: #a8d898;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 6px 24px;
+  border: 2px solid #3a5a3a;
+  border-bottom: none;
+  width: 100%;
+  text-align: center;
+  text-shadow: 0 0 8px rgba(128,220,128,0.5);
+}
+
+#game {
+  display: block;
+  border: 3px solid #3a5a3a;
+  border-top: none;
+  /* Crisp pixel rendering */
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  image-rendering: -moz-crisp-edges;
+}
+
+#controls {
+  background: #253525;
+  border: 2px solid #3a5a3a;
+  border-top: none;
+  color: #889888;
+  font-size: 12px;
+  padding: 5px 24px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.p1-tag { color: #7898d0; }
+.p2-tag { color: #d07898; }
+.divider { color: #3a5a3a; }
